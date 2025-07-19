@@ -1,51 +1,44 @@
-🏙️ Real Estate Price Prediction in Egypt 🇪🇬
-This project is a property price prediction tool and analytical dashboard for residential listings in Egypt, with a focus on the New Administrative Capital. Built using Streamlit, scikit-learn, and Pandas, the application provides users with:
+## 🏙️ Real Estate Price Prediction in Egypt 🇪🇬
 
-🔍 Features
-Machine Learning Model (Random Forest) that predicts property prices based on:
+This project is a **property price prediction tool** and **analytical dashboard** for residential listings in Egypt, with a focus on the **New Administrative Capital**. Built using **Streamlit**, **scikit-learn**, and **Pandas**, the application provides users with:
 
-Property type
+### 🔍 Features
 
-Location
+* **Machine Learning Model** (Random Forest) that predicts property prices based on:
 
-Apartment area (sqm)
+  * Property type
+  * Location
+  * Apartment area (sqm)
+  * Number of bedrooms and bathrooms
+  * Selected amenities
 
-Number of bedrooms and bathrooms
+* **Interactive Streamlit App** with:
 
-Selected amenities
+  * A clean UI and banner of Egypt’s New Capital
+  * Dropdown inputs for property type and location to avoid invalid inputs
+  * Real-time price prediction with visual feedback
+  * Dashboard displaying:
 
-Interactive Streamlit App with:
+    * Average apartment price
+    * Average price per square meter
+    * Minimum and maximum property prices
+    * Price distribution histogram
 
-A clean UI and banner of Egypt’s New Capital
+* **Outlier handling**:
 
-Dropdown inputs for property type and location to avoid invalid inputs
+  * Removes unrealistic entries (e.g., prices above 500M EGP or below 3M EGP) for better model accuracy
 
-Real-time price prediction with visual feedback
+### 📦 Files Included
 
-Dashboard displaying:
+* `app.py`: Streamlit application
+* `model.pkl`: Trained Random Forest regression model
+* `features.pkl`: Feature columns after one-hot encoding
+* `data.csv`: Cleaned and filtered dataset (used for analytics)
 
-Average apartment price
+### 📈 Use Case
 
-Average price per square meter
+This tool helps **buyers, real estate analysts, and developers** estimate property values and gain insights into market trends based on data scraped from online property listings.
 
-Minimum and maximum property prices
-
-Price distribution histogram
-
-Outlier handling:
-
-Removes unrealistic entries (e.g., prices above 500M EGP or below 3M EGP) for better model accuracy
-
-📦 Files Included
-app.py: Streamlit application
-
-model.pkl: Trained Random Forest regression model
-
-features.pkl: Feature columns after one-hot encoding
-
-data.csv: Cleaned and filtered dataset (used for analytics)
-
-📈 Use Case
-This tool helps buyers, real estate analysts, and developers estimate property values and gain insights into market trends based on data scraped from online property listings.
+---
 
 Let me know if you want to include example screenshots, deployment instructions (e.g., Streamlit Cloud), or badges (like “made with ❤️ in Egypt”).
