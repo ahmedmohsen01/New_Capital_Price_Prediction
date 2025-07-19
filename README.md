@@ -42,3 +42,10 @@ This tool helps **buyers, real estate analysts, and developers** estimate proper
 ---
 
 Let me know if you want to include example screenshots, deployment instructions (e.g., Streamlit Cloud), or badges (like “made with ❤️ in Egypt”).
+
+## 📌 Reference
+
+This project is inspired by and built upon the work of [Epsilon AI](https://github.com/EPSILON-AI).
+
+We acknowledge their contribution to the open-source community.
+
