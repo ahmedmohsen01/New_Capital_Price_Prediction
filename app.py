@@ -36,6 +36,11 @@ def predict_price(model, feature_columns, property_type, location, area, bedroom
     input_df['no_of_bedrooms'] = bedrooms
     input_df['no_of_bathrooms'] = bathrooms
 
+    # Add average meter price feature
+    avg_meter_price = 57117.58
+    input_df['avg_meter_price'] = area * avg_meter_price
+
+    # One-hot encode type and location
     type_col = f"type_{property_type}"
     loc_col = f"location_{location}"
 
@@ -55,6 +60,7 @@ def predict_price(model, feature_columns, property_type, location, area, bedroom
 
     prediction = model.predict(input_df)[0]
     return round(prediction, 2)
+
 
 st.set_page_config(page_title="Property Price Predictor", layout="wide")
 st.markdown("""
